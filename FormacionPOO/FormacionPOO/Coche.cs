@@ -89,7 +89,7 @@ namespace FormacionPOO
         // Constructor
         public Coche(string color, string marca, string modelo, int numeroPuertas, Motor motor) 
         {
-            _numeroRuedas = 4; //rueda firestone especial turbo
+            _numeroRuedas = 4;
             _velocidad = 0;
             _color = color;
             _marca = marca;
