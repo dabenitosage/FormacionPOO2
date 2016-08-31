@@ -92,7 +92,7 @@ namespace FormacionPOO
             }
         }
         #endregion
-        
+
         #region Métodos (Comportamiento)
         public void Matricular(string matricula) 
         {
