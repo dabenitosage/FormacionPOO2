@@ -39,14 +39,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Radio\AmplificadorRadioFrecuencia.cs" />
+    <Compile Include="Radio\AntenaReceptora.cs" />
+    <Compile Include="Radio\Circuiteria.cs" />
     <Compile Include="Avion.cs" />
     <Compile Include="Coche.cs" />
     <Compile Include="Herencia\Avion.cs" />
     <Compile Include="Herencia\Coche.cs" />
     <Compile Include="Herencia\IVehiculo.cs" />
     <Compile Include="Herencia\Vehiculo.cs" />
+    <Compile Include="Radio\DiscriminadorFM.cs" />
     <Compile Include="Motor.cs" />
+    <Compile Include="Radio\PantallaLcd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radio\Radio.cs" />
+    <Compile Include="Radio\RadioSecuencial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Radio\ClassDiagramRadio.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
