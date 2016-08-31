@@ -42,7 +42,12 @@
     <Compile Include="Radio\AmplificadorRadioFrecuencia.cs" />
     <Compile Include="Radio\AntenaReceptora.cs" />
     <Compile Include="Radio\Circuiteria.cs" />
+    <Compile Include="Avion.cs" />
     <Compile Include="Coche.cs" />
+    <Compile Include="Herencia\Avion.cs" />
+    <Compile Include="Herencia\Coche.cs" />
+    <Compile Include="Herencia\IVehiculo.cs" />
+    <Compile Include="Herencia\Vehiculo.cs" />
     <Compile Include="Radio\DiscriminadorFM.cs" />
     <Compile Include="Motor.cs" />
     <Compile Include="Radio\PantallaLcd.cs" />
@@ -53,6 +58,7 @@
   <ItemGroup>
     <None Include="Radio\ClassDiagramRadio.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
