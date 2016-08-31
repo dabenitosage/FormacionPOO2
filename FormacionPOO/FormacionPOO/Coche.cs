@@ -92,30 +92,7 @@ namespace FormacionPOO
             }
         }
         #endregion
-        
-<<<<<<< HEAD
-=======
-        
-        // Constructor
-        public Coche(string color, string marca, string modelo, int numeroPuertas, Motor motor) 
-        {
-            _numeroRuedas = 4;
-            _velocidad = 0;
-            _color = color;
-            _marca = marca;
-            _modelo = modelo;
-            _numeroPuertas = numeroPuertas;
-            _motor = motor;
-        }
 
-        // Destructor
-        ~Coche() 
-        {
-            _velocidad = 0;
-        }
-
-
->>>>>>> 570bf4d84ca5c9e179d6725fb3476c57a80f0342
         #region Métodos (Comportamiento)
         public void Matricular(string matricula) 
         {
