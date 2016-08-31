@@ -1,0 +1,8 @@
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\bin\Debug\FormacionPOO.dll
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\bin\Debug\FormacionPOO.pdb
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\ConsoleApp\obj\Debug\ConsoleApp.pdb
