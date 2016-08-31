@@ -2,7 +2,7 @@
 
 namespace FormacionPOO
 {
-    public class Coche
+    public class Avion
     {
         #region Campos (Estado)
         private string _color;
@@ -10,10 +10,11 @@ namespace FormacionPOO
         private string _modelo;
         private int _velocidad;
         private string _estado;
-        private string _matricula;
-        private int _numeroRuedas;
-        private int _numeroPuertas;
-        private Motor _motor;
+        private int _numeroMotores;
+        private int _maximaAltitud;
+        private int _velocidadDespegue;
+        private int _velocidadAterrizaje;
+        private bool _volando;
         #endregion
 
         #region Propiedades
@@ -48,7 +49,7 @@ namespace FormacionPOO
                 return _velocidad;
             }
         }
-
+        
         /// <summary>
         /// Valores: Parado, Arrancado, En movimiento.
         /// </summary>
@@ -60,45 +61,48 @@ namespace FormacionPOO
             }
         }
 
-        public string Matricula
+        public int NumeroMotores 
         {
             get
             {
-                return _matricula;
+                return _numeroMotores;
             }
         }
 
-        public int NumeroRuedas
+        public int MaximaAltitud 
         {
             get
             {
-                return _numeroRuedas;
+                return _maximaAltitud;
             }
         }
 
-        public int NumeroPuertas
+        public int VelocidadDespegue 
         {
             get
             {
-                return _numeroPuertas;
+                return _velocidadDespegue;
             }
         }
 
-        public Motor Motor
+        public int VelocidadAterrizaje 
         {
             get
             {
-                return _motor;
+                return _velocidadAterrizaje;
+            }
+        }
+
+        public bool Volando 
+        {
+            get
+            {
+                return _volando;
             }
         }
         #endregion
-
+        
         #region Métodos (Comportamiento)
-        public void Matricular(string matricula) 
-        {
-            this._matricula = matricula;
-        }
-
         public void Arrancar() 
         {
             if (this._estado == "Parado")
@@ -129,7 +133,7 @@ namespace FormacionPOO
 
             this._velocidad = this._velocidad + velocidad;
         }
-                
+                        
         public void Frenar(int velocidad) 
         {
             if (this._estado == "Parado" || this._estado == "Arrancado")
@@ -139,35 +143,68 @@ namespace FormacionPOO
 
             if (velocidad > this._velocidad)
             {
-                this._velocidad = 0;
-                this._estado = "Arrancado";
+                if (this._volando == false)
+                {
+                    this._velocidad = 0;
+                    this._estado = "Arrancado";
+                }
+                else 
+                {
+                    throw new Exception("La velocidad del vehículo en el aire no puede ser 0 km/h.");
+                }
             }
 
             this._velocidad = this._velocidad - velocidad;
 
-            if (this._velocidad == 0) 
+            if (this._velocidad < this._velocidadAterrizaje) 
             {
-                this._estado = "Arrancado";
+                throw new Exception(String.Format("La velocidad del vehículo no puede ser menor a la velocidad de aterrizaje: {0} km/h.", this._velocidadAterrizaje));
+            }
+        }
+        
+        public void Despegar() 
+        {
+            if (this._estado == "En movimiento" && this._velocidad == this._velocidadDespegue && this._volando == false)
+            {
+                this._volando = true;
+            }
+            else 
+            {
+                throw new Exception("El avión no puede despegar. Los parámetros de despegueno son correctos.");
+            }
+        }
+
+        public void Aterrizar() 
+        {
+            if (this._estado == "En movimiento" && this._velocidad == this._velocidadAterrizaje && this._volando == true)
+            {
+                this._volando = false;
+            }
+            else
+            {
+                throw new Exception("El avión no puede aterrizar. Los parámetros de aterrizaje no son correctos.");
             }
         }
         #endregion
 
 
         // Constructor
-        public Coche(string color, string marca, string modelo, int numeroPuertas, Motor motor)
+        public Avion(string color, string marca, string modelo, int numeroMotores, int maximaAltitud, int velocidadDespegue, int velocidadAterrizaje)
         {
-            _numeroRuedas = 4;
             _velocidad = 0;
             _estado = "Parado";
+            _volando = false;
             _color = color;
             _marca = marca;
             _modelo = modelo;
-            _numeroPuertas = numeroPuertas;
-            _motor = motor;
+            _numeroMotores = numeroMotores;
+            _maximaAltitud = maximaAltitud;
+            _velocidadDespegue = velocidadDespegue;
+            _velocidadAterrizaje = velocidadAterrizaje;
         }
 
         // Destructor
-        ~Coche()
+        ~Avion()
         {
             _velocidad = 0;
         }

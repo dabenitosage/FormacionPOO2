@@ -29,45 +29,10 @@ namespace FormacionPOO.Test
 
             var _deportivo = new Coche("ROJO", "FERRARI", "TESTARROSA", 2, _motorDeportivo);
 
-            
             Assert.IsNotNull(_turismo);
         }
 
-        /// <summary>
-        /// Diapositiva 
-        /// </summary>
-        [TestMethod]
-        public void FormacionPOOTest_Ejemplox() 
-        {
-            // Crear coche 1: turismo.
-            var _turismo = CrearTurismo();
-
-            // Crear coche 2: deportivo.
-            var _deportivo = CrearDeportivo();
-
-            // Recorrido turismo.
-            _turismo.Arrancar();
-            Console.ReadLine();
-            _turismo.Acelerar(60);
-            Console.ReadLine();
-            _turismo.Frenar(10);
-            Console.ReadLine();
-            _turismo.GirarDerecha(90);
-            Console.ReadLine();
-            _turismo.Acelerar(30);
-            Console.ReadLine();
-            _turismo.Frenar(10);
-            Console.ReadLine();
-            _turismo.GirarIzquierda(90);
-            Console.ReadLine();
-            _turismo.Frenar(20);
-            Console.ReadLine();
-            _turismo.Parar();
-            Console.ReadLine();
-
-            Assert.IsTrue(_turismo.Velocidad == 0);
-        }
-
+        
 
         private Coche CrearDeportivo()
         {

@@ -1,19 +1,15 @@
-﻿using System;
-
-namespace FormacionPOO
+﻿
+using System;
+namespace FormacionPOO.Herencia
 {
-    public class Coche
+    public abstract class Vehiculo : IVehiculo
     {
-        #region Campos (Estado)
+        #region Campos
         private string _color;
         private string _marca;
         private string _modelo;
-        private int _velocidad;
-        private string _estado;
-        private string _matricula;
-        private int _numeroRuedas;
-        private int _numeroPuertas;
-        private Motor _motor;
+        protected int _velocidad;
+        protected string _estado;
         #endregion
 
         #region Propiedades
@@ -59,47 +55,10 @@ namespace FormacionPOO
                 return _estado;
             }
         }
-
-        public string Matricula
-        {
-            get
-            {
-                return _matricula;
-            }
-        }
-
-        public int NumeroRuedas
-        {
-            get
-            {
-                return _numeroRuedas;
-            }
-        }
-
-        public int NumeroPuertas
-        {
-            get
-            {
-                return _numeroPuertas;
-            }
-        }
-
-        public Motor Motor
-        {
-            get
-            {
-                return _motor;
-            }
-        }
         #endregion
 
-        #region Métodos (Comportamiento)
-        public void Matricular(string matricula) 
-        {
-            this._matricula = matricula;
-        }
-
-        public void Arrancar() 
+        #region Métodos
+        public void Arrancar()
         {
             if (this._estado == "Parado")
             {
@@ -129,45 +88,22 @@ namespace FormacionPOO
 
             this._velocidad = this._velocidad + velocidad;
         }
-                
-        public void Frenar(int velocidad) 
-        {
-            if (this._estado == "Parado" || this._estado == "Arrancado")
-            {
-                throw new Exception("El vehículo no está en movimiento. No se puede frenar.");
-            }
 
-            if (velocidad > this._velocidad)
-            {
-                this._velocidad = 0;
-                this._estado = "Arrancado";
-            }
-
-            this._velocidad = this._velocidad - velocidad;
-
-            if (this._velocidad == 0) 
-            {
-                this._estado = "Arrancado";
-            }
-        }
+        public abstract void Frenar(int velocidad);
         #endregion
 
-
         // Constructor
-        public Coche(string color, string marca, string modelo, int numeroPuertas, Motor motor)
+        public Vehiculo(string color, string marca, string modelo)
         {
-            _numeroRuedas = 4;
             _velocidad = 0;
             _estado = "Parado";
             _color = color;
             _marca = marca;
             _modelo = modelo;
-            _numeroPuertas = numeroPuertas;
-            _motor = motor;
         }
 
         // Destructor
-        ~Coche()
+        ~Vehiculo()
         {
             _velocidad = 0;
         }
