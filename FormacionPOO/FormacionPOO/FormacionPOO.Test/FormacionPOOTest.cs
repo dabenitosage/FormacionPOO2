@@ -96,5 +96,57 @@ namespace FormacionPOO.Test
 
             return _coche;
         }
+
+        /// <summary>
+        /// Diapositiva 
+        /// </summary>
+        [TestMethod]
+        public void FormacionPOOTest_Ejemplo2_POO()
+        {
+            // Crear radio POO.
+            var _radio = new Radio();
+
+           
+
+            // Recorrido turismo.
+            _radio.VerPantallaLcd();
+            _radio.SubirVolumen();
+            _radio.SubirVolumen();
+            _radio.SubirVolumen();
+            _radio.BajarVolumen();
+            _radio.BuscarNuevaEmisora();
+            _radio.SubirVolumen();
+            _radio.BuscarNuevaEmisora();
+            _radio.BajarVolumen();
+            _radio.BajarVolumen();
+            _radio.BajarVolumen();
+
+            Assert.IsTrue(true);
+        }
+
+        [TestMethod]
+        public void FormacionPOOTest_Ejemplo2_Secuencial()
+        {
+            // Crear radio secuencial.
+            var _radio = new RadioSecuencial();
+
+
+
+            // Recorrido turismo.
+            _radio.VerPantallaLcd();
+            _radio.SubirVolumen();
+            _radio.SubirVolumen();
+            _radio.SubirVolumen();
+            _radio.BajarVolumen();
+            _radio.BuscarNuevaEmisora();
+            _radio.SubirVolumen();
+            _radio.BuscarNuevaEmisora();
+            _radio.BajarVolumen();
+            _radio.BajarVolumen();
+            _radio.BajarVolumen();
+
+            Assert.IsTrue(true);
+        }
+
     }
 }
