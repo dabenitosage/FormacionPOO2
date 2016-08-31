@@ -1,0 +1,7 @@
+C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\FormacionPOO.Test\obj\Debug\FormacionPOO.Test.csprojResolveAssemblyReference.cache
+C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\FormacionPOO.Test\bin\Debug\FormacionPOO.Test.dll
+C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\FormacionPOO.Test\bin\Debug\FormacionPOO.Test.pdb
+C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\FormacionPOO.Test\bin\Debug\FormacionPOO.dll
+C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\FormacionPOO.Test\bin\Debug\FormacionPOO.pdb
+C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\FormacionPOO.Test\obj\Debug\FormacionPOO.Test.dll
+C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\FormacionPOO.Test\obj\Debug\FormacionPOO.Test.pdb

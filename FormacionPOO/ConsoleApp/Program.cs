@@ -24,13 +24,9 @@ namespace ConsoleApp
             Console.ReadLine();
             _turismo.Frenar(10);
             Console.ReadLine();
-            _turismo.GirarDerecha(90);
-            Console.ReadLine();
             _turismo.Acelerar(30);
             Console.ReadLine();
             _turismo.Frenar(10); 
-            Console.ReadLine();
-            _turismo.GirarIzquierda(90);
             Console.ReadLine();
             _turismo.Frenar(20);
             Console.ReadLine();
