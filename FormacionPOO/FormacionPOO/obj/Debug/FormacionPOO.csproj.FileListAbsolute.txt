@@ -3,3 +3,8 @@ C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO
 C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\obj\Debug\FormacionPOO.dll
 C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\obj\Debug\FormacionPOO.pdb
 C:\Users\miguelangel.moreno\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\obj\Debug\FormacionPOO.csprojResolveAssemblyReference.cache
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\bin\Debug\FormacionPOO.dll
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\bin\Debug\FormacionPOO.pdb
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\obj\Debug\FormacionPOO.csprojResolveAssemblyReference.cache
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\obj\Debug\FormacionPOO.dll
+C:\Users\david.benito\Source\Repos\FormacionPOO2\FormacionPOO\FormacionPOO\obj\Debug\FormacionPOO.pdb

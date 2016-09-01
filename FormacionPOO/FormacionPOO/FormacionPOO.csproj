@@ -40,6 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Coche.cs" />
+    <Compile Include="Herencia\Avion.cs" />
+    <Compile Include="Herencia\Coche.cs" />
+    <Compile Include="Herencia\IVehiculo.cs" />
+    <Compile Include="Herencia\Vehiculo.cs" />
     <Compile Include="Motor.cs" />
     <Compile Include="Radio\AmplificadorRadioFrecuencia.cs" />
     <Compile Include="Radio\AntenaReceptora.cs" />
